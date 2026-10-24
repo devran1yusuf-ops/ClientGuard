@@ -1,0 +1,44 @@
+# ClientGuard ayarları
+
+# Oyuncu girdikten kaç tick sonra kontrol edilsin? (20 tick = 1 sn)
+# Client brand bilgisi girişten biraz sonra gelir, çok düşürme.
+check-delay-ticks: 60
+
+# Bedrock (Geyser/Floodgate) oyuncuları kontrol dışı bırakılsın mı?
+ignore-bedrock: true
+
+# Ban komutu. %player% ve %reason% kullanılabilir.
+# Başka ban plugini kullanıyorsan değiştir (örn: "litebans:ban %player% %reason%")
+ban-command: "ban %player% %reason%"
+ban-reason: "Yasaklı client (hile) kullanımı"
+
+# true yaparsan banlamaz, sadece kick atar (test için ideal)
+kick-only: false
+
+# Banlanınca yetkililere bildirim gitsin mi? (clientguard.admin yetkisi)
+notify-admins: true
+
+# Client brand içinde bu kelimelerden biri geçerse ban (küçük/büyük harf farketmez)
+blocked-brands:
+  - meteor
+  - wurst
+  - liquidbounce
+  - aristois
+  - impact
+  - huzuni
+  - salhack
+  - rusherhack
+  - inertia
+  - futureclient
+  - vape
+  - sigma
+  - novoline
+  - thunderhack
+
+# Oyuncunun kayıt ettiği plugin kanallarında bu kelimeler geçerse ban
+blocked-channels:
+  - meteor
+  - wurst
+  - liquidbounce
+  - rusherhack
+  - thunderhack

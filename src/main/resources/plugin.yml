@@ -1,0 +1,16 @@
+name: ClientGuard
+version: '${project.version}'
+main: dev.clientguard.ClientGuard
+api-version: '1.21'
+softdepend: [floodgate, Geyser-Spigot]
+commands:
+  clientguard:
+    description: ClientGuard yönetim komutu
+    usage: /clientguard reload
+    permission: clientguard.admin
+permissions:
+  clientguard.admin:
+    default: op
+  clientguard.bypass:
+    description: Client kontrolünden muaf tutar
+    default: false
